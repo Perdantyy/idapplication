@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IdApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+      <h1>IdApp</h1>
+      <output id="level">1</output>
+      <output id="score">0</output>
+    </header>
+    <main>
+       <form onsubmit="check(event)">
+            <p>Name the band/artist</p>
+            <input type="text" id="userAnswer" placeholder="Type your answer here" required>
+            <button type="submit">Submit </button>
+        </form>
+     
+         <video id="videoPlayer" width="640" height="360" controls poster="Moby.jpg">
+             <source src="Sound1.mp3"  type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+        <div class="blur"></div>
+    </main>
+</body>
+</html>

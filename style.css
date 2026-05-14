@@ -1,0 +1,51 @@
+html{
+    color-scheme: light dark;
+    font-family: cursive;
+    header{
+        display: flex;
+        justify-content: space-between;
+        output{
+            font-family: monospace;
+            font-size: 2rem;
+        }
+    }
+}
+
+main{
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    form{
+        flex: 1; /* Allows items to grow equally */
+        width: 50%;
+        zoom: 2;
+        background-color: rgb(239, 192, 255);
+    }
+    video{
+        flex: 1; /* Allows items to grow equally */
+        width: 50%;
+ 
+        
+        
+    }
+    .blur{
+        height: 100px;
+        flex: 1;
+        width: 50%;
+        position: absolute;
+        background: rgba(255,255,255,0.99 );
+        right: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+        form{
+            width: 100%;
+        }
+        video{
+            width: 100%;
+        }
+    }
+    
+}
